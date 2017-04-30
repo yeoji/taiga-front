@@ -615,6 +615,7 @@
         "THIRD_PARTIES": {
             "SECRET_KEY": "Секретный ключ",
             "PAYLOAD_URL": "Ссылка на полезную нагрузку",
+            "PROJECT_KEY": "Project key",
             "VALID_IPS": "Правильные IP-адреса (через ,)"
         },
         "BITBUCKET": {

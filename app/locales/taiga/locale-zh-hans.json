@@ -615,6 +615,7 @@
         "THIRD_PARTIES": {
             "SECRET_KEY": "密钥",
             "PAYLOAD_URL": "有效负荷网址",
+            "PROJECT_KEY": "Project key",
             "VALID_IPS": "有效来源IP(请用逗点分开)"
         },
         "BITBUCKET": {

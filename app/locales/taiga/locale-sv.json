@@ -615,6 +615,7 @@
         "THIRD_PARTIES": {
             "SECRET_KEY": "Hemlig nyckel",
             "PAYLOAD_URL": "Länk för paketinnhåll",
+            "PROJECT_KEY": "Project key",
             "VALID_IPS": "Giltig ursprunglig IP-adresser (separerat med ,)"
         },
         "BITBUCKET": {

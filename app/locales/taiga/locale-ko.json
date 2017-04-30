@@ -615,6 +615,7 @@
         "THIRD_PARTIES": {
             "SECRET_KEY": "비밀 키",
             "PAYLOAD_URL": "Payload URL",
+            "PROJECT_KEY": "Project key",
             "VALID_IPS": "유효한 원본 IP (콤마','로 구분)"
         },
         "BITBUCKET": {

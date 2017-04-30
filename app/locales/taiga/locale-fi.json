@@ -615,6 +615,7 @@
         "THIRD_PARTIES": {
             "SECRET_KEY": "Salainen avain",
             "PAYLOAD_URL": "Yhteyden URL-osoite",
+            "PROJECT_KEY": "Project key",
             "VALID_IPS": "Vaadittavat lähdeIPt (pilkuilla eroteltuna)"
         },
         "BITBUCKET": {

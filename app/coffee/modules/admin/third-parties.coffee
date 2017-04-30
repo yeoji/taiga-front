@@ -571,6 +571,43 @@ module.directive("tgBitbucketWebhooks", ["$tgRepo", "$tgConfirm", "$tgLoading", 
 
 
 #############################################################################
+## GOGS Directive
+#############################################################################
+
+GogsWebhooksDirective = ($repo, $confirm, $loading) ->
+    link = ($scope, $el, $attrs) ->
+        form = $el.find("form").checksley({"onlyOneErrorElement": true})
+        submit = debounce 2000, (event) =>
+            event.preventDefault()
+
+            return if not form.validate()
+
+            currentLoading = $loading()
+                .target(submitButton)
+                .start()
+
+            promise = $repo.saveAttribute($scope.gogs, "gogs")
+            promise.then ->
+                currentLoading.finish()
+                $confirm.notify("success")
+                $scope.$emit("project:modules:reload")
+
+            promise.then null, (data) ->
+                currentLoading.finish()
+                form.setErrors(data)
+                if data._error_message
+                    $confirm.notify("error", data._error_message)
+
+        submitButton = $el.find(".submit-button")
+
+        $el.on "submit", "form", submit
+
+    return {link:link}
+
+module.directive("tgGogsWebhooks", ["$tgRepo", "$tgConfirm", "$tgLoading", GogsWebhooksDirective])
+
+
+#############################################################################
 ## Valid Origin IP's Directive
 #############################################################################
 ValidOriginIpsDirective = ->

@@ -16,6 +16,17 @@ div.wrapper.roles(
 
         form
             fieldset
+                label(for="project-key", translate="ADMIN.THIRD_PARTIES.PROJECT_KEY")
+                input(
+                    id="project-key"
+                    type="text"
+                    name="project-key"
+                    ng-model="gogs.project_key"
+                    placeholder="{{'ADMIN.THIRD_PARTIES.PROJECT_KEY' | translate}}"
+                    data-regexp="[A-Z]{2,6}"
+                )
+
+            fieldset
                 label(for="secret-key", translate="ADMIN.THIRD_PARTIES.SECRET_KEY")
                 input(
                     id="secret-key"

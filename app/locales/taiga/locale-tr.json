@@ -615,6 +615,7 @@
         "THIRD_PARTIES": {
             "SECRET_KEY": "Gizli anahtar",
             "PAYLOAD_URL": "Paket URL'si",
+            "PROJECT_KEY": "Project key",
             "VALID_IPS": "Geçerli çıkış IP'leri (virgülle ayrılmış olarak)"
         },
         "BITBUCKET": {

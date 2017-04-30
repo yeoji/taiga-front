@@ -615,6 +615,7 @@
         "THIRD_PARTIES": {
             "SECRET_KEY": "Geheimschlüssel",
             "PAYLOAD_URL": "Payload URL",
+            "PROJECT_KEY": "Project key",
             "VALID_IPS": "Gültige Quell-IPs (getrennt von ,)"
         },
         "BITBUCKET": {
